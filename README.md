@@ -36,4 +36,4 @@
 
 | Week | Q&A | Call |
 | ---- | --- | ---- |
-| 1    |     |      |
+| 1    | [🎧 Q&A #1](https://youtu.be/wROwn8L7z2Q) | [🎧 Community call #135](https://youtu.be/8rmHst1_yVw) |
