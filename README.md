@@ -149,6 +149,9 @@
 - ⚙️ Трекинг асинхронных контекстов
   - ⭐ AsyncLocalStorage, AsyncResource: https://youtu.be/zatWQkOXyVM
   - 💻 Примеры использования AsyncLocalStorage и AsyncResource: https://github.com/HowProgrammingWorks/AsyncContextTracking
+- ⚙️ Процессы и потоки
+  - 🧩 Многопоточность в Node.js: https://youtu.be/VNXga8zomrY
+  - 🧩 Web Locks API in Node.js and browser https://youtu.be/auMM-uV12F0
 
 ## Записи созвонов
 
