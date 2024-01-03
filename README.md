@@ -13,6 +13,17 @@
 
 ## Содержание
 
+| Applied 💯     | Advanced 🧑‍🎓                | System ⚙️           | Elective 🧑‍🚀           | Legacy ⚠️          |
+|:--------------|:--------------------------|:-------------------|:---------------------|:------------------|
+| `callbacks`   | `EvemtEmitter`            | `Thenable`         | `compose callbacks`  | `Deferred`        |
+| `promises`    | `AsyncQueue`              | `Semaphore`        | `async compose`      | `function*/yield` |
+| `async/await` | `AsyncPool`               | `Mutex`            | `Observer`           | `Async.js`        |
+| `events`      | `Collector`               | `Spin Lock`        | `RxJS`               | `Metasync`        |
+| `streams`     | `Chain of responsibility` | `MessageChannel`   | `Future`             | `middleware`      |
+| `signals`     | `Async Generator`         | `BroadcastChannel` | `coroutines`         | `do`              |
+| `locks`       | `Async Iterator`          | `threads`          | `Actor Model`        |                   |
+|               |                           | `processes`        |                      |                   |
+
 Условные обозначения: ⭐ новые лекции, ✨ открытые лекции, 🧩 необязательные темы
 
 - ⭐ Контракты асинхронности на базе callback: `Callback-last-error-first`
