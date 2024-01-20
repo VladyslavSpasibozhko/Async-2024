@@ -159,4 +159,4 @@
 | ---- | --- | ---- |
 | 1    | [🎧 Q&A #1](https://youtu.be/wROwn8L7z2Q) | [🎧 Community call #135](https://youtu.be/8rmHst1_yVw) |
 | 2    | [🎧 Q&A #2](https://youtu.be/k4z4Z9GzjHk) | [🎧 Community call #136](https://youtu.be/K2DURZcn8fQ) |
-| 3    | [🎧 Q&A #3](https://youtu.be/C36hlPJ_bZE) | |
+| 3    | [🎧 Q&A #3](https://youtu.be/C36hlPJ_bZE) | [🎧 Community call #137](https://youtu.be/Z5KVhiu-Wwo) |
