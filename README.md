@@ -163,3 +163,4 @@
 | 4    | [🎧 Q&A #4](https://youtu.be/x6mw9zTWvoI) | [🎧 Community call #138](https://youtu.be/sUNLN0Ba-FM) |
 | 5    | [🎧 Q&A #5](https://youtu.be/1hiPHn3CNko) | [🎧 Community call #139](https://youtu.be/1rX1rjiiFU8) |
 | 6    | [🎧 Q&A #6](https://youtu.be/H8ZeA1v27F8) | [🎧 Community call #140](https://youtu.be/XJcyOtd_Jg8) |
+| 7    | [🎧 Q&A #7](https://youtu.be/UVYFezLzpds) | |
