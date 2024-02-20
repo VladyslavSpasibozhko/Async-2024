@@ -33,8 +33,9 @@
 Условные обозначения: ⭐ новые лекции, ✨ открытые старые лекции, 💯 обязательные, 🧑‍🎓 продвинутые, ⚙️ системные, 🧑‍🚀 по выбору, ⚠️ устаревшее, 🧩 необязательные темы, 💻 примеры кода, 🧑‍💻 задания
 
 - 💯 Контракты асинхронности на базе callback
-  - ⭐ Контракт `Callback-last-error-first` (готовится)
-  - 💻 Колбеки: https://github.com/HowProgrammingWorks/AsynchronousProgramming
+  - ⭐ [Контракты `Callback` и `Callback-last-error-first`](https://youtu.be/vcOGCWL-eZc)
+  - 💻 Колбеки: https://github.com/HowProgrammingWorks/Callbacks
+  - 💻 Примеры кода с колбеками: https://github.com/HowProgrammingWorks/AsynchronousProgramming
   - 🧑‍💻 Задания по колбекам (готовится)
 - 💯 Минимально необходимое понимание рантайма: event loop, I/O, таймеры
   - ⭐ Объяснение фаз Event loop из курса по Node.js: https://youtu.be/ofU4In1RPHk
