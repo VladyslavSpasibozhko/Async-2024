@@ -52,8 +52,8 @@
   - ✨ Паттерн открытый конструктор (Revealing Constructor): https://youtu.be/leR5sXRkuJI
   - 💻 Примеры кода: https://github.com/HowProgrammingWorks/RevealingConstructor
 - ⚙️ Контракт `Thenable`
-  - ⭐ Контракт `Thenabe` (готовится)
-  - ✨ Thenable из старой лекции: https://youtu.be/Jdf_tZuJbHI
+  - ⭐ [Контракт `Thenabe`](https://youtu.be/CHQcDllD_io)
+  - ✨ [Thenable из старой лекции](https://youtu.be/Jdf_tZuJbHI)
   - 💻 Примеры кода: https://github.com/HowProgrammingWorks/Thenable
   - 🧑‍💻 Задания по `Thenabe` (готовится)
 - 💯 Контракт `Promise`
