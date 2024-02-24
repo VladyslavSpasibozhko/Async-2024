@@ -166,4 +166,4 @@
 | 6    | [🎧 Q&A #6](https://youtu.be/H8ZeA1v27F8) | [🎧 Community call #140](https://youtu.be/XJcyOtd_Jg8) |
 | 7    | [🎧 Q&A #7](https://youtu.be/UVYFezLzpds) | [🎧 Community call #141](https://youtu.be/C5ccFiiMryA) |
 | 8    | [🎧 Q&A #8](https://youtu.be/D2953mBIzPw) | [🎧 Community call #142](https://youtu.be/8Oay9T81Y-s) |
-| 8    | [🎧 Q&A #9](https://youtu.be/6Gn7Qq9W6Kc) |  |
+| 9    | [🎧 Q&A #9](https://youtu.be/6Gn7Qq9W6Kc) | [🎧 Community call #143](https://youtu.be/T8Z4KlMN6cM) |
