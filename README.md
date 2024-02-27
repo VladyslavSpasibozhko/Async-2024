@@ -19,13 +19,13 @@
 
 | Applied 💯     | Advanced 🧑‍🎓                | System ⚙️           | Elective 🧑‍🚀           | Legacy ⚠️          |
 |:--------------|:--------------------------|:-------------------|:---------------------|:------------------|
-| `callbacks`   | `EvemtEmitter`            | `Thenable`         | `compose callbacks`  | `Deferred`        |
-| `promises`    | `AsyncQueue`              | `Semaphore`        | `async compose`      | `function*/yield` |
-| `async/await` | `AsyncPool`               | `Mutex`            | `Observer`           | `Async.js`        |
-| `events`      | `Collector`               | `Spin Lock`        | `RxJS`               | `Metasync`        |
-| `streams`     | `Chain of responsibility` | `MessageChannel`   | `Future`             | `middleware`      |
-| `signals`     | `Async Generator`         | `BroadcastChannel` | `coroutines`         |                   |
-| `locks`       | `Async Iterator`          | `threads`          | `Actor Model`        |                   |
+| `callbacks`   | `AsyncQueue`              | `Thenable`         | `compose callbacks`  | `Deferred`        |
+| `promises`    | `AsyncPool`               | `Semaphore`        | `async compose`      | `function*/yield` |
+| `async/await` | `AsyncCollector`          | `Mutex`            | `Observer`           | `Async.js`        |
+| `events`      | `Chain of responsibility` | `Spin Lock`        | `RxJS`               | `Metasync`        |
+| `streams`     | `Async Generator`         | `MessageChannel`   | `Future`             | `middleware`      |
+| `signals`     | `Async Iterator`          | `BroadcastChannel` | `coroutines`         |                   |
+| `locks`       |                           | `threads`          | `Actor Model`        |                   |
 |               |                           | `processes`        | `do`                 |                   |
 
 Приоритеты подготовки материалов по курсу у меня тоже по этой таблицы, я буду двигаться от первого столбика к пятому. Но часть материалов я уже добавил, они были записаны ранее, находятся в открытом доступе, но все еще актуальны и переписывать их нет смысла.
@@ -45,6 +45,8 @@
 - 💯 Контракты на базе событий `EventTarget`, `EventEmitter`
   - ⭐ События (готовится)
   - 🧑‍💻 Задания по событиям (готовится)
+  - ✨ [EventEmitter из старой лекции](https://youtu.be/LK2jveAnRNg)
+  - 💻 EventEmitter: https://github.com/HowProgrammingWorks/EventEmitter
 - 💯 Абстракция потоков `Stream`
   - ⭐ [Стримы Readable, Writable, Transform, открытый конструктор, буферизация, backpressure](https://youtu.be/Qr2b8C_p_Pc)
   - 🧑‍💻 Задания по стримам (готовится)
@@ -77,10 +79,6 @@
   - 💻 Примеры кода из старого курса: https://github.com/HowProgrammingWorks/AsyncAwait
   - 💻 Примеры кода: (готовятся), будут тут https://github.com/HowProgrammingWorks/AsyncErrorHandling
   - 🧑‍💻 Задания по обработке ошибок (готовится)
-- 🧑‍🎓 EventEmitter
-  - ⭐ EventEmitter (готовится)
-  - ✨ [EventEmitter из старой лекции](https://youtu.be/LK2jveAnRNg)
-  - 💻 EventEmitter: https://github.com/HowProgrammingWorks/EventEmitter
 - 🧑‍🎓 Асинхронная очередь `AsyncQueue`
   - ⭐ Асинхронная очередь (готовится)
   - ✨ [Конкурентная асинхронная очередь из старой лекции](https://youtu.be/Lg46AH8wFvg)
