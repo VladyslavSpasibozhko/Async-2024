@@ -64,9 +64,9 @@
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/Promise/tree/master/JavaScript)
   - 🧑‍💻 Задания по `Promise` (готовится)
 - 💯 Контракт асинхронных функций `async/await`
-  - ⭐ Асинхронные функции (готовится)
+  - ⭐ [Асинхронные функции](https://youtu.be/GXjYDDjnFSQ)
   - ✨ [Асинхронные функции из старой лекции](https://youtu.be/Jdf_tZuJbHI)
-  - 💻 Примеры кода: https://github.com/HowProgrammingWorks/AsyncAwait
+  - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/AsyncFunction/tree/main/JavaScript)
   - 🧑‍💻 Задания по `async/await` (готовится)
 - 💯 Контракт сигналов `signals`
   - ⭐ Сигналы (готовится)
