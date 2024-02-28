@@ -59,10 +59,9 @@
   - 💻 Примеры кода: https://github.com/HowProgrammingWorks/Thenable
   - 🧑‍💻 Задания по `Thenabe` (готовится)
 - 💯 Контракт `Promise`
-  - ⭐ Promisethen/catch/finally (готовится)
-  - ⭐ Параллельное и последовательное исполнение `all/any/race/allSettled`
+  - ⭐ [Promise: then/catch/finally и методы класса all, allSettled, race, any](https://youtu.be/2tTr9_g2w9M)
   - ✨ [Асинхронность на промисах из старой лекции](https://youtu.be/RMl4r6s1Y8M)
-  - 💻 Примеры кода: https://github.com/HowProgrammingWorks/Promise
+  - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/Promise/tree/master/JavaScript)
   - 🧑‍💻 Задания по `Promise` (готовится)
 - 💯 Контракт асинхронных функций `async/await`
   - ⭐ Асинхронные функции (готовится)
