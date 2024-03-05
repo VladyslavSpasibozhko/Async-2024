@@ -42,11 +42,12 @@
   - 🧩 [Стрим с разбрром Event loop и асинхронности](https://www.youtube.com/live/ND5HNHicACI)
   - 💻 Таймеры: https://github.com/HowProgrammingWorks/Timers
   - 🧑‍💻 Задания по таймерам (готовится)
-- 💯 Контракты на базе событий `EventTarget`, `EventEmitter`
-  - ⭐ События (готовится)
+- 💯 Контракты на базе событий
+  - ⭐ [События: `EventTarget`, `EventEmitter`](https://youtu.be/dwLyUGQGTKU)
+  - 💻 [Примеры кода из новой лекции по событиям](https://github.com/HowProgrammingWorks/Events)
   - 🧑‍💻 Задания по событиям (готовится)
   - ✨ [EventEmitter из старой лекции](https://youtu.be/LK2jveAnRNg)
-  - 💻 EventEmitter: https://github.com/HowProgrammingWorks/EventEmitter
+  - 💻 [Примеры кода из старой лекции по EventEmitter](https://github.com/HowProgrammingWorks/EventEmitter)
 - 💯 Абстракция потоков `Stream`
   - ⭐ [Стримы Readable, Writable, Transform, открытый конструктор, буферизация, backpressure](https://youtu.be/Qr2b8C_p_Pc)
   - 🧑‍💻 Задания по стримам (готовится)
