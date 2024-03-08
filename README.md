@@ -167,3 +167,21 @@
 | 9    | [🎧 Q&A #9](https://youtu.be/6Gn7Qq9W6Kc) | [🎧 Community call #143](https://youtu.be/T8Z4KlMN6cM) |
 | 10   | [🎧 Q&A #10](https://youtu.be/tNKCw0R_CRA) | [🎧 Community call #144](https://youtu.be/kEiuzraEJq8) |
 | 11   | [🎧 Q&A #11](https://youtu.be/YNRTNcNwRKI) | |
+
+## Сравнение контрактов и абстракций
+
+| Contract         | Control      | Events     | Data                     |
+|:-----------------|:-------------|:-----------|:-------------------------|
+| `callbacks`      | Control flow |            |                          |
+| `Thenable`       | Control flow |            | Container                |
+| `Promise`        | Control flow |            | Container                |
+| `async/await`    | Control flow |            |                          |
+| `events`         |              | Event flow |                          |
+| `streams`        |              | Event flow | Data flow                |
+| `RxJS`           |              | Event flow | Data flow                |
+| `signals`        |              |            | Reactive value container |
+| `locks`          | Control flow |            |                          |
+| `AsyncIterable`  | Control flow |            |                          |
+| `AsyncQueue`     |              |            | Collection               |
+| `AsyncPool`      |              |            | Collection               |
+| `AsyncCollector` |              |            | Collection               |
