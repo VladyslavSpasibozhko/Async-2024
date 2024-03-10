@@ -7,7 +7,10 @@ const total = (items, callback) => {
   let result = 0;
   let timer = setInterval(() => {
     if (i >= items.length) {
-      clearInterval(timer);
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
       callback(null, result);
       return;
     }
