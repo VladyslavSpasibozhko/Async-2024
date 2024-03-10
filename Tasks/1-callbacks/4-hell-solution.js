@@ -48,19 +48,15 @@ const budget = (limit) => {
 const wallet = budget(1650);
 let amount = 0;
 
-const print = (success, subtotal) => (balance) => {
-  console.log({ success, amount, subtotal, balance });
-};
-
 const transaction = (subtotal) => (success) => {
   if (success) amount += subtotal;
-  wallet.rest(print(success, subtotal));
+  wallet.rest((balance) => {
+    console.log({ success, amount, subtotal, balance });
+  });
 };
 
-const pay = (subtotal) => wallet.withdraw(subtotal, transaction(subtotal));
+const processGroup = (group) => groupTotal(group, (subtotal) => {
+  wallet.withdraw(subtotal, transaction(subtotal))
+});
 
-const processGroup = (group) => groupTotal(group, pay);
-
-const processPurchase = (purchase) => iterateGroups(purchase, processGroup);
-
-getPurchase(processPurchase);
+getPurchase((purchase) => iterateGroups(purchase, processGroup));
