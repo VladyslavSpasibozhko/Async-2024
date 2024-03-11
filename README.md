@@ -36,7 +36,7 @@
   - ⭐ [Контракты `Callback` и `Callback-last-error-first`](https://youtu.be/vcOGCWL-eZc)
   - 💻 Колбеки: https://github.com/HowProgrammingWorks/Callbacks
   - 💻 Примеры кода с колбеками: https://github.com/HowProgrammingWorks/AsynchronousProgramming
-  - 🧑‍💻 Задания по колбекам (готовится)
+  - 🧑‍💻 [Задания по колбекам](https://github.com/metatech-university/Async-2024/tree/main/Tasks/Callbacks)
 - 💯 Минимально необходимое понимание рантайма: event loop, I/O, таймеры
   - ⭐ [Фазы Event-loop в V8 и Node.js](https://youtu.be/ofU4In1RPHk)
   - 🧩 [Стрим с разбрром Event loop и асинхронности](https://www.youtube.com/live/ND5HNHicACI)
