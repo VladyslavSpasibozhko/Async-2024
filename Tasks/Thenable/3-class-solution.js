@@ -10,9 +10,10 @@ class Iterator {
 
   then(fulfill, reject) {
     if (this.#index < this.#items.length) {
-      return void fulfill(this.#items[this.#index++]);
+      fulfill(this.#items[this.#index++]);
+    } else {
+      reject(new Error('No more items to iterate'));
     }
-    reject(new Error('No more items to iterate'));
   }
 }
 

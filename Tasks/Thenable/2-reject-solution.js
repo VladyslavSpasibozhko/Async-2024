@@ -5,9 +5,10 @@ const iterate = (items) => {
   return {
     then(fulfill, reject) {
       if (index < items.length) {
-        return void fulfill(items[index++]);
+        fulfill(items[index++]);
+      } else {
+        reject(new Error('No more items to iterate'));
       }
-      reject(new Error('No more items to iterate'));
     }
   };
 };
