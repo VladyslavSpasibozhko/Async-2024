@@ -58,12 +58,12 @@
   - ⭐ [Контракт `Thenabe`](https://youtu.be/CHQcDllD_io)
   - ✨ [Thenable из старой лекции](https://youtu.be/Jdf_tZuJbHI)
   - 💻 Примеры кода: https://github.com/HowProgrammingWorks/Thenable
-  - 🧑‍💻 Задания по `Thenabe` (готовится)
+  - 🧑‍💻 [Задания по `Thenabe`](https://github.com/metatech-university/Async-2024/tree/main/Tasks/Thenable)
 - 💯 Контракт `Promise`
   - ⭐ [Promise: then/catch/finally и методы класса all, allSettled, race, any](https://youtu.be/2tTr9_g2w9M)
   - ✨ [Асинхронность на промисах из старой лекции](https://youtu.be/RMl4r6s1Y8M)
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/Promise/tree/master/JavaScript)
-  - 🧑‍💻 Задания по `Promise` (готовится)
+  - 🧑‍💻 [Задания по `Promise`](https://github.com/metatech-university/Async-2024/tree/main/Tasks/Promises)
 - 💯 Контракт асинхронных функций `async/await`
   - ⭐ [Асинхронные функции](https://youtu.be/GXjYDDjnFSQ)
   - ✨ [Асинхронные функции из старой лекции](https://youtu.be/Jdf_tZuJbHI)
