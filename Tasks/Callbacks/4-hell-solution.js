@@ -56,7 +56,7 @@ const transaction = (subtotal) => (success) => {
 };
 
 const processGroup = (group) => groupTotal(group, (subtotal) => {
-  wallet.withdraw(subtotal, transaction(subtotal))
+  wallet.withdraw(subtotal, transaction(subtotal));
 });
 
 getPurchase((purchase) => iterateGroups(purchase, processGroup));
