@@ -5,6 +5,8 @@
 // So remove all try/catch blocks and pass errors to callbacks.
 // Hint: You may also use error.cause to wrap escalated errors.
 // Extra credit task: use AggregateError to combine escalated errors.
+// Extra credit task: fix eslint error: "Function declared in a loop
+//   contains unsafe references to variable(s) 'total'  no-loop-func"
 
 const MAX_PURCHASE = 2000;
 
@@ -32,11 +34,11 @@ const calculateTotal = (order, callback) => {
     const goods = order[groupName];
     calculateSubtotal(goods, (amount) => {
       total += amount;
-      if (total > MAX_PURCHASE) {
-        throw new Error('Total is above the limit');
-      }
       expenses.set(groupName, amount);
     });
+    if (total > MAX_PURCHASE) {
+      throw new Error('Total is above the limit');
+    }
   }
   return callback({ total, expenses });
 };

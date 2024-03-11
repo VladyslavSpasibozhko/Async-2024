@@ -22,18 +22,23 @@ const calculateSubtotal = (goods, callback) => {
   callback(null, amount);
 };
 
+const adder = (initial) => ({
+  value: initial,
+  add(x) { this.value += x; },
+});
+
 const calculateTotal = (order, callback) => {
   const expenses = new Map();
   const errors = [];
-  let total = 0;
+  const total = adder(0);
   for (const groupName in order) {
     const goods = order[groupName];
     calculateSubtotal(goods, (error, amount) => {
       if (error) return void errors.push(error);
-      total += amount;
+      total.add(amount);
       expenses.set(groupName, amount);
     });
-    if (total > MAX_PURCHASE) {
+    if (total.value > MAX_PURCHASE) {
       errors.push(new Error('Total is above the limit'));
       break;
     }
@@ -43,7 +48,7 @@ const calculateTotal = (order, callback) => {
     const error = new Error('Can not calculate total', { cause });
     return void callback(error);
   }
-  return void callback(null, { total, expenses });
+  return void callback(null, { total: total.value, expenses });
 };
 
 const purchase = {
