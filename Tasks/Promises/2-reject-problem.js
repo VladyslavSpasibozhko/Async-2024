@@ -1,6 +1,8 @@
 'use strict';
 
-// Task: support rejection with an error after last item
+// Task: support rejection with an error, if no more items in
+// `items` array are available to return with `.next()`
+// Change throwing error to returning rejected Promise.
 
 const iterate = (items) => {
   let index = 0;
