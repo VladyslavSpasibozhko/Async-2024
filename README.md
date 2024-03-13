@@ -167,6 +167,7 @@
 | 9    | [🎧 Q&A #9](https://youtu.be/6Gn7Qq9W6Kc) | [🎧 Community call #143](https://youtu.be/T8Z4KlMN6cM) |
 | 10   | [🎧 Q&A #10](https://youtu.be/tNKCw0R_CRA) | [🎧 Community call #144](https://youtu.be/kEiuzraEJq8) |
 | 11   | [🎧 Q&A #11](https://youtu.be/YNRTNcNwRKI) | |
+| 12   | [🎧 Q&A #12](https://youtu.be/-H0dJdaJ7T0) | |
 
 ## Сравнение контрактов и абстракций
 
