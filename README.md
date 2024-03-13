@@ -68,7 +68,7 @@
   - ⭐ [Асинхронные функции](https://youtu.be/GXjYDDjnFSQ)
   - ✨ [Асинхронные функции из старой лекции](https://youtu.be/Jdf_tZuJbHI)
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/AsyncFunction/tree/main/JavaScript)
-  - 🧑‍💻 Задания по `async/await` (готовится)
+  - 🧑‍💻 [Задания по `async/await`](https://github.com/metatech-university/Async-2024/tree/main/Tasks/AsyncAwait)
 - 💯 Контракт сигналов `Signals`
   - ⭐ [Сигналы: signal, computed, effect](https://youtu.be/o36cKrQgXW0)
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/Signals)
