@@ -45,7 +45,7 @@
 - 💯 Контракты на базе событий
   - ⭐ [События: `EventTarget`, `EventEmitter`](https://youtu.be/dwLyUGQGTKU)
   - 💻 [Примеры кода из новой лекции по событиям](https://github.com/HowProgrammingWorks/Events)
-  - 🧑‍💻 Задания по событиям (готовится)
+  - 🧑‍💻 [Задания по событиям](https://github.com/metatech-university/Async-2024/tree/main/Tasks/Events)
   - ✨ [EventEmitter из старой лекции](https://youtu.be/LK2jveAnRNg)
   - 💻 [Примеры кода из старой лекции по EventEmitter](https://github.com/HowProgrammingWorks/EventEmitter)
 - 💯 Абстракция потоков `Stream`
