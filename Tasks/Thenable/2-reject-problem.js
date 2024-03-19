@@ -1,23 +1,24 @@
-'use strict';
+"use strict";
 
 // Task: support rejection with an error after last item
-
 const iterate = (items) => {
   let index = 0;
   return {
-    then(fulfill, /*reject*/) {
-      // Call both: fulfill and reject
+    then(fulfill, reject) {
+      console.log(reject);
       if (index < items.length) {
         fulfill(items[index++]);
+      } else {
+        reject(new Error("Iteration is over"));
       }
-    }
+    },
   };
 };
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
 (async () => {
