@@ -1,22 +1,31 @@
-'use strict';
+"use strict";
 
 // Task: use `on` and `AsyncIterator` to iterate all items
 // in purchase emitted `into EventEmitter`
 
-const { EventEmitter, on } = require('node:events');
+const { EventEmitter, on } = require("node:events");
 
 const purchase = new EventEmitter({ captureRejections: true });
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
-const iterator = on(purchase, 'add');
-console.log({ iterator });
+const iterator = on(purchase, "add");
 
+(async () => {
+  for await (const [item] of iterator) {
+    console.log(item);
+  }
+})();
+
+let ms = 0;
 for (const item of electronics) {
-  purchase.emit('add', item);
-}
+  ms += 1000;
 
+  setTimeout(() => {
+    purchase.emit("add", item);
+  }, ms);
+}

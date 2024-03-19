@@ -1,22 +1,41 @@
-'use strict';
+"use strict";
+const { EventEmitter } = require("node:events");
 
 // Task: rewrite EventTarget to EventEmitter
 // Hint: you need Node.js >= v19.0.0
 
-const purchase = new EventTarget();
+// const purchase = new EventTarget();
 
-purchase.addEventListener('buy', (event) => {
+// purchase.addEventListener('buy', (event) => {
+//   const bought = event.detail;
+//   console.log({ bought });
+// });
+
+// const electronics = [
+//   { name: "Laptop", price: 1500 },
+//   { name: "Keyboard", price: 100 },
+//   { name: "HDMI cable", price: 10 },
+// ];
+
+// for (const item of electronics) {
+//   const data = { detail: item };
+//   purchase.dispatchEvent(new CustomEvent('buy', data));
+// }
+
+const emitter = new EventEmitter();
+
+emitter.addListener("buy", (event) => {
   const bought = event.detail;
   console.log({ bought });
 });
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
 for (const item of electronics) {
   const data = { detail: item };
-  purchase.dispatchEvent(new CustomEvent('buy', data));
+  emitter.emit("buy", data);
 }

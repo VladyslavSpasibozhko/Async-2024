@@ -38,7 +38,7 @@ const electronics = [
 
 (async () => {
   const items = new Iterator(electronics);
-  // Use `new Iterator(electronics)`
+
   const item1 = await items;
   console.log(item1);
   const item2 = await items;

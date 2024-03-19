@@ -26,13 +26,17 @@ const electronics = [
 ];
 
 (async () => {
-  const items = iterate(electronics);
-  const item1 = await items.next();
-  console.log(item1);
-  const item2 = await items.next();
-  console.log(item2);
-  const item3 = await items.next();
-  console.log(item3);
-  const item4 = await items.next();
-  console.log(item4);
+  try {
+    const items = iterate(electronics);
+    const item1 = await items.next();
+    console.log(item1);
+    const item2 = await items.next();
+    console.log(item2);
+    const item3 = await items.next();
+    console.log(item3);
+    const item4 = await items.next();
+    console.log(item4);
+  } catch (err) {
+    console.error(err.message);
+  }
 })();
