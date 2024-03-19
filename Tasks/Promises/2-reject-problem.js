@@ -1,23 +1,25 @@
-'use strict';
+"use strict";
 
 // Task: support rejection with an error after last item
 
 const iterate = (items) => {
   let index = 0;
   return {
-    next: () => new Promise((fulfill) => {
-      if (index < items.length) {
-        return fulfill(items[index++]);
-      }
-      throw new Error('No more items to iterate');
-    })
+    next: () =>
+      new Promise((fulfill, reject) => {
+        if (index < items.length) {
+          fulfill(items[index++]);
+        } else {
+          reject("new Error('No more items to iterate')");
+        }
+      }),
   };
 };
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
 (async () => {

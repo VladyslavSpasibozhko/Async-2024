@@ -1,31 +1,36 @@
-'use strict';
+"use strict";
 
 // Task: change `iterate` contract from callbacks to Promise
-
 const iterate = (items) => {
   let index = 0;
+
   const chain = {
-    next: (callback) => {
-      if (index < items.length) {
-        callback(items[index++]);
-      }
-      return chain;
-    }
+    next: () =>
+      new Promise((fullfil) => {
+        if (index < items.length) {
+          fullfil(items[index++]);
+        }
+      }),
   };
+
   return chain;
 };
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
-// Use await syntax to get items
-iterate(electronics).next((item) => {
-  console.log(item);
-}).next((item) => {
-  console.log(item);
-}).next((item) => {
-  console.log(item);
-});
+(async () => {
+  const chain = iterate(electronics);
+
+  const tik = await chain.next();
+  console.log(tik);
+
+  const tik2 = await chain.next();
+  console.log(tik2);
+
+  const tik3 = await chain.next();
+  console.log(tik3);
+})();
