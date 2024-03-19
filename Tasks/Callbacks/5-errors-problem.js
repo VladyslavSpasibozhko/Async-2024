@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // Task: rewrite error handling to use callback-last-error-first
 // contract to return errors instead of throwing them.
@@ -12,55 +12,78 @@ const MAX_PURCHASE = 2000;
 
 const calculateSubtotal = (goods, callback) => {
   let amount = 0;
+
   for (const item of goods) {
-    if (typeof item.name !== 'string') {
-      throw new Error('Noname in item in the bill');
+    if (typeof item.name !== "string") {
+      callback(new Error("Noname in item in the bill"));
+      return;
     }
-    if (typeof item.price !== 'number') {
-      throw new Error(`${item.name} price expected to be number`);
+
+    if (typeof item.price !== "number") {
+      callback(new Error(`${item.name} price expected to be number`));
+      return;
     }
+
     if (item.price < 0) {
-      throw new Error(`Negative price for ${item.name}`);
+      callback(new Error(`Negative price for ${item.name}`));
+      return;
     }
+
     amount += item.price;
   }
-  callback(amount);
+
+  callback(null, amount);
 };
 
 const calculateTotal = (order, callback) => {
+  const errors = [];
   const expenses = new Map();
   let total = 0;
+
   for (const groupName in order) {
     const goods = order[groupName];
-    calculateSubtotal(goods, (amount) => {
+
+    calculateSubtotal(goods, (error, amount) => {
+      if (error) {
+        errors.push(error);
+        return;
+      }
+
       total += amount;
       expenses.set(groupName, amount);
     });
+
     if (total > MAX_PURCHASE) {
-      throw new Error('Total is above the limit');
+      errors.push(new Error("Total is above the limit"));
+      break;
     }
   }
-  return callback({ total, expenses });
+
+  if (errors.length) {
+    const cause = new AggregateError(errors, "Caused by");
+    callback(new Error("Calculation was not successful", { cause }));
+    return;
+  }
+
+  callback(null, { total, expenses });
+  return;
 };
 
 const purchase = {
   Electronics: [
-    { name: 'Laptop', price: 1500 },
-    { name: 'Keyboard', price: 100 },
-    { name: 'HDMI cable' },
+    { name: "Laptop", price: 1500 },
+    { name: "Keyboard", price: 100 },
+    { name: "HDMI cable" },
   ],
-  Textile: [
-    { name: 'Bag', price: 50 },
-    { price: 20 },
-  ],
+  Textile: [{ name: "Bag", price: 50 }, { price: 20 }],
 };
 
-try {
-  console.log(purchase);
-  calculateTotal(purchase, (bill) => {
-    console.log(bill);
-  });
-} catch (error) {
-  console.log('Error detected');
-  console.error(error);
-}
+calculateTotal(purchase, (error, bill) => {
+  if (error) {
+    console.log("Error detected");
+    console.error(error);
+    return;
+  }
+
+  console.log(bill);
+});

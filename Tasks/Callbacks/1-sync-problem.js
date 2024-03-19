@@ -1,22 +1,39 @@
-'use strict';
+"use strict";
 
-// Task: rewrite function to return result into sync callback
+// // Task: rewrite function to return result into sync callback
+// // Change signature to: (items, callback(result))
+// const total = (items) => {
+//   let result = 0;
+//   for (const item of items) {
+//     result += item.price;
+//   }
+//   return result;
+// };
 
-// Change signature to: (items, callback(result))
-const total = (items) => {
+// const electronics = [
+//   { name: 'Laptop', price: 1500 },
+//   { name: 'Keyboard', price: 100 },
+//   { name: 'HDMI cable', price: 10 },
+// ];
+
+// // Use new signature total(electronics, (money) => ...)
+// const money = total(electronics);
+// console.log({ money });
+
+const total = (items, callback) => {
   let result = 0;
   for (const item of items) {
-    result += item.price;
+    result = item.price;
   }
-  return result;
+  callback(result);
 };
 
 const electronics = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Keyboard', price: 100 },
-  { name: 'HDMI cable', price: 10 },
+  { name: "Laptop", price: 1500 },
+  { name: "Keyboard", price: 100 },
+  { name: "HDMI cable", price: 10 },
 ];
 
-// Use new signature total(electronics, (money) => ...)
-const money = total(electronics);
-console.log({ money });
+total(electronics, (total) => {
+  console.log({ total });
+});
