@@ -1,6 +1,8 @@
 "use strict";
 
-// Task: change `iterate` contract from callbacks to Promise
+// Task: change `iterate` contract from chainable callbacks
+// to Promise (chainable or you can call it with await syntax)
+
 const iterate = (items) => {
   let index = 0;
 

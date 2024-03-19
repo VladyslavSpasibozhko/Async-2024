@@ -45,7 +45,7 @@
 - 💯 Контракты на базе событий
   - ⭐ [События: `EventTarget`, `EventEmitter`](https://youtu.be/dwLyUGQGTKU)
   - 💻 [Примеры кода из новой лекции по событиям](https://github.com/HowProgrammingWorks/Events)
-  - 🧑‍💻 Задания по событиям (готовится)
+  - 🧑‍💻 [Задания по событиям](https://github.com/metatech-university/Async-2024/tree/main/Tasks/Events)
   - ✨ [EventEmitter из старой лекции](https://youtu.be/LK2jveAnRNg)
   - 💻 [Примеры кода из старой лекции по EventEmitter](https://github.com/HowProgrammingWorks/EventEmitter)
 - 💯 Абстракция потоков `Stream`
@@ -68,7 +68,7 @@
   - ⭐ [Асинхронные функции](https://youtu.be/GXjYDDjnFSQ)
   - ✨ [Асинхронные функции из старой лекции](https://youtu.be/Jdf_tZuJbHI)
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/AsyncFunction/tree/main/JavaScript)
-  - 🧑‍💻 Задания по `async/await` (готовится)
+  - 🧑‍💻 [Задания по `async/await`](https://github.com/metatech-university/Async-2024/tree/main/Tasks/AsyncAwait)
 - 💯 Контракт сигналов `Signals`
   - ⭐ [Сигналы: signal, computed, effect](https://youtu.be/o36cKrQgXW0)
   - 💻 [Примеры кода](https://github.com/HowProgrammingWorks/Signals)
@@ -167,6 +167,7 @@
 | 9    | [🎧 Q&A #9](https://youtu.be/6Gn7Qq9W6Kc) | [🎧 Community call #143](https://youtu.be/T8Z4KlMN6cM) |
 | 10   | [🎧 Q&A #10](https://youtu.be/tNKCw0R_CRA) | [🎧 Community call #144](https://youtu.be/kEiuzraEJq8) |
 | 11   | [🎧 Q&A #11](https://youtu.be/YNRTNcNwRKI) | |
+| 12   | [🎧 Q&A #12](https://youtu.be/-H0dJdaJ7T0) | |
 
 ## Сравнение контрактов и абстракций
 
